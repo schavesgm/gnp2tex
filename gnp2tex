@@ -29,7 +29,7 @@ while getopts 'f:s:p:h' flag; do
         f) nameGnuplot="${OPTARG}" ;;
         s) savePDF="${OPTARG}" ;;
         p) packages="${OPTARG}" ;;
-        h) print_usage exit 1;;
+        h) print_usage; exit 1;;
     esac
 done
 
